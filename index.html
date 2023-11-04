@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/mystyle.css" type="text/css">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Coding Solution for Module 3</title>
+</head>
+<body>
+    <!-- HEADER  START-->
+    <header>
+        <nav class="navbar navbar-default" id="header-nav">
+
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+
+                <div class="navbar-brand">
+                    <a href="#"><h1>Food, LLC</h1></a>
+                </div>
+
+                <!-- button -->
+                <button type ="button" class="navbar-toggle collapsed visible-xs"
+                data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                </div>
+
+        <div class="collapse navbar-collapse" id="collapsable-nav">
+
+            <ul class="nav navbar-nav navbar-right visible-xs text-center" id="nav-list">
+
+                <li>
+                    <a href="#chicken"><br class="hidden-xs">Chicken</a>
+                </li>
+
+                  <li>
+                    <a href="#beef"><br class="hidden-xs">Beef</a>
+                </li>
+
+                 <li>
+                    <a href="#sushi"><br class="hidden-xs">Sushi</a>
+                </li>
+            </ul>
+
+
+        </div>
+
+
+            </div>
+
+        </nav>
+
+    </header>
+    <!-- HEADER END -->
+
+    <!-- body start -->
+    <div class="container" id="main-content">
+
+        <h2 class="text-center" id="top-heading">
+            Our Menu
+        </h2>
+
+        <div class="row" id="home-tiles">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div id="chicken">
+                    <section>
+                        <h3 class="text-center">Chicken</h3>
+                        <p>Now, let’s put together what you’ve learned by integrating storage into a web application. As
+applications grow more complex, it becomes increasingly important to manage as much data as possible
+without server interaction. Keeping data local to the client reduces network traffic and increases
+responsiveness by fetching data from a local machine instead of a remote location.
+One common problem developers grapple with is how to manage data as users move from page to
+page within an application. Traditionally, web applications achieve this by storing data on a server and
+moving it back and forth while the user navigates pages. Alternatively, the application may attempt to
+keep the user in a single page and update everything dynamically. However, users are prone to wander,
+and getting data back into the display quickly when a user returns to your application’s page is a great
+way to enhance the user experience.
+In our sample application, we’ll show how to store temporary application data locally while the user
+moves from page to page on a web site and quickly load it from storage on each page. To accomplish
+this, we’ll build on the examples of previous chapters. In Chapter 4, we showed how easy it is to gather a
+user’s current location. Then, in Chapter 6, we demonstrated how to take location data and send it to a
+remote server so that it can be viewed by any number of interested users. Here, we will go one step
+further: we will listen for broadcasted location data delivered via a WebSocket and store it in local
+storage so that it is immediately available as users move from page to page.
+Imagine that our running club has live location information from its race participants being
+broadcast from their mobile devices and shared via a WebSocket server. It would be simple for a web
+application to display the current position of every racer live and in real time, as the racers upload new
+position information during the race. And a smart web site would cache those race positions to display
+them quickly as a user navigated among the pages of the site. That’s exactly what we’re going to build.
+In order to achieve this, we’ll need to introduce a demonstration web site that can save and restore
+our racer data. We’ve created a three-page example running race site and placed it in our online
+resources in the folder code/storage, but you can use any site of your choosing for your own
+demonstration. The key here is merely that you have multiple web pages that are easily traversed by a
+user. We will insert a bit of dynamic content into those pages to represent a live leader board, or a list of
+race participants and their current distance from the finish line. Figure 9-7 shows the three pages that
+make up the race site.</p>
+                        <p>end of chicken sec
+                            <a href="#top-heading">
+                                back to top
+                            </a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <!-- sec 2 -->
+
+               <div class="col-md-4 col-sm-6 col-xs-12">
+                <div id="beef">
+                    <section>
+                        <h3 class="text-center">Beef</h3>
+                        <p>Now, let’s put together what you’ve learned by integrating storage into a web application. As
+applications grow more complex, it becomes increasingly important to manage as much data as possible
+without server interaction. Keeping data local to the client reduces network traffic and increases
+responsiveness by fetching data from a local machine instead of a remote location.
+One common problem developers grapple with is how to manage data as users move from page to
+page within an application. Traditionally, web applications achieve this by storing data on a server and
+moving it back and forth while the user navigates pages. Alternatively, the application may attempt to
+keep the user in a single page and update everything dynamically. However, users are prone to wander,
+and getting data back into the display quickly when a user returns to your application’s page is a great
+way to enhance the user experience.
+In our sample application, we’ll show how to store temporary application data locally while the user
+moves from page to page on a web site and quickly load it from storage on each page. To accomplish
+this, we’ll build on the examples of previous chapters. In Chapter 4, we showed how easy it is to gather a
+user’s current location. Then, in Chapter 6, we demonstrated how to take location data and send it to a
+remote server so that it can be viewed by any number of interested users. Here, we will go one step
+further: we will listen for broadcasted location data delivered via a WebSocket and store it in local
+storage so that it is immediately available as users move from page to page.
+Imagine that our running club has live location information from its race participants being
+broadcast from their mobile devices and shared via a WebSocket server. It would be simple for a web
+application to display the current position of every racer live and in real time, as the racers upload new
+position information during the race. And a smart web site would cache those race positions to display
+them quickly as a user navigated among the pages of the site. That’s exactly what we’re going to build.
+In order to achieve this, we’ll need to introduce a demonstration web site that can save and restore
+our racer data. We’ve created a three-page example running race site and placed it in our online
+resources in the folder code/storage, but you can use any site of your choosing for your own
+demonstration. The key here is merely that you have multiple web pages that are easily traversed by a
+user. We will insert a bit of dynamic content into those pages to represent a live leader board, or a list of
+race participants and their current distance from the finish line. Figure 9-7 shows the three pages that
+make up the race site.</p>
+                        <p>end of beef sec
+                            <a href="#top-heading">
+                                back to top
+                            </a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <!-- sec 3 -->
+               <div class="col-md-4 col-sm-6 col-xs-12">
+                <div id="sushi">
+                    <section>
+                        <h3 class="text-center">Sushi</h3>
+                        <p>Now, let’s put together what you’ve learned by integrating storage into a web application. As
+applications grow more complex, it becomes increasingly important to manage as much data as possible
+without server interaction. Keeping data local to the client reduces network traffic and increases
+responsiveness by fetching data from a local machine instead of a remote location.
+One common problem developers grapple with is how to manage data as users move from page to
+page within an application. Traditionally, web applications achieve this by storing data on a server and
+moving it back and forth while the user navigates pages. Alternatively, the application may attempt to
+keep the user in a single page and update everything dynamically. However, users are prone to wander,
+and getting data back into the display quickly when a user returns to your application’s page is a great
+way to enhance the user experience.
+In our sample application, we’ll show how to store temporary application data locally while the user
+moves from page to page on a web site and quickly load it from storage on each page. To accomplish
+this, we’ll build on the examples of previous chapters. In Chapter 4, we showed how easy it is to gather a
+user’s current location. Then, in Chapter 6, we demonstrated how to take location data and send it to a
+remote server so that it can be viewed by any number of interested users. Here, we will go one step
+further: we will listen for broadcasted location data delivered via a WebSocket and store it in local
+storage so that it is immediately available as users move from page to page.
+Imagine that our running club has live location information from its race participants being
+broadcast from their mobile devices and shared via a WebSocket server. It would be simple for a web
+application to display the current position of every racer live and in real time, as the racers upload new
+position information during the race. And a smart web site would cache those race positions to display
+them quickly as a user navigated among the pages of the site. That’s exactly what we’re going to build.
+In order to achieve this, we’ll need to introduce a demonstration web site that can save and restore
+our racer data. We’ve created a three-page example running race site and placed it in our online
+resources in the folder code/storage, but you can use any site of your choosing for your own
+demonstration. The key here is merely that you have multiple web pages that are easily traversed by a
+user. We will insert a bit of dynamic content into those pages to represent a live leader board, or a list of
+race participants and their current distance from the finish line. Figure 9-7 shows the three pages that
+make up the race site.</p>
+                        <p>end of Sushi sec
+                            <a href="#top-heading">
+                                back to top
+                            </a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+             <div class="clearfix visisble-lg-block"></div>
+
+
+
+        </div>
+    </div>
+    <!-- body end -->
+   
+    
+</body>
+</html>
